@@ -1,0 +1,26 @@
+nav {
+  background-color: $color-black;
+
+  .logo {
+    width: 8rem;
+  }
+
+  .nav-link {
+    color: $color-white;
+    &:hover {
+      color: $color-white;
+      font-weight: 600;
+    }
+  }
+
+  .userBtn,
+  .cartBtn {
+    text-decoration: none;
+    cursor: pointer;
+  }
+
+  .numerito {
+    color: $color-white;
+    font-size: 1rem;
+  }
+}

@@ -1,0 +1,82 @@
+.productos {
+  @include margen-seccion;
+
+  .tituloPrincipal {
+    @include titulo-principal;
+  }
+
+
+  li {
+    list-style: none;
+
+    .botonCategoria {
+      background-color: transparent;
+      border: none;
+      color: rgb(72, 71, 71);
+      font-size: 1.2rem;
+      transition: color 0.3s ease;
+      margin: 0.5rem;
+
+
+      &:hover {
+        color: $color-black;
+      }
+
+      &.active {
+        color: $color-black;
+        font-weight: 600;
+      }
+    }
+
+  }
+
+  .tituloCategoria {
+    font-size: 2rem;
+  }
+
+  .contenedorProductos {
+    .producto {
+      padding: 0;
+      padding-bottom: 1rem;
+      border: 0.5rem solid $color-black;
+      border-radius: 0.3rem;
+      max-width: 25rem;
+      background-color: $color-black;
+      margin: 1rem;
+
+      .productoImagen {
+        margin-bottom: 1rem;
+        border-radius: 0.3rem 0.3rem 0rem 0rem;
+      }
+
+      .productoTitulo,
+      .productoPrecio {
+        font-weight: 600;
+        font-size: 1rem;
+        color: $color-white;
+      }
+
+      .productoDescripcion {
+        color: $color-white;
+        font-size: 0.9rem;
+      }
+
+      .botonAgregar {
+        border: none;
+        border-radius: 0.2rem;
+        background-color: $color-white;
+        color: $color-black;
+        padding: 0.60rem 1rem;
+        font-size: 0.9rem;
+        font-weight: 600;
+      }
+
+      .fa-heart {
+        font-size: 1.4rem;
+        color: $color-white;
+      }
+    }
+  }
+
+
+}

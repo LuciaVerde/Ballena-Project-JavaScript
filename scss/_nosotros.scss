@@ -1,0 +1,36 @@
+.nosotros {
+    @include margen-seccion;
+
+    .tituloPrincipal {
+        @include titulo-principal;
+    }
+
+    img {
+        max-height: 40rem;
+        max-width: 40rem;
+        border-radius: 0.5rem;
+    }
+
+    figcaption {
+        font-weight: 600;
+        font-style: italic;
+    }
+
+    .nosotrosTitulo {
+        font-size: 2.2rem;
+        font-weight: 600;
+    }
+
+    p {
+        font-family: 'Poppins', sans-serif;
+        font-size: 1.2rem;
+
+        @media (max-width:992px) {
+            font-size: 1rem;
+        }
+
+        @media (max-width:767px) {
+            text-align: center;
+        }
+    }
+}
