@@ -1,3 +1,7 @@
+.tituloPrincipalCarrito{
+    @include titulo-principal;
+}
+
 .contenedorCarrito {
     width: 50rem;
 

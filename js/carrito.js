@@ -53,7 +53,7 @@ function cargarProductosCarrito() {
             //captura y funcionalidades de botones de sumar y restar
             const restar = div.querySelector(".botonRestar");
             const sumar = div.querySelector(".botonSumar");
-            
+
             //resta
             restar.addEventListener("click", () => {
                 if (producto.cantidad > 1) {
@@ -103,21 +103,21 @@ function eliminarDelCarrito(e) {
     Toastify({
         text: "Producto eliminado",
         offset: {
-            x: 30, 
+            x: 30,
             y: 80,
         },
         duration: 3000,
         destination: "",
         newWindow: true,
         close: true,
-        gravity: "top", 
+        gravity: "top",
         position: "right",
         stopOnFocus: true,
         style: {
             background: "rgba(0, 0, 0, 0.7)",
             color: "white",
         },
-        onClick: function () { } 
+        onClick: function () { }
     }).showToast();
 
 

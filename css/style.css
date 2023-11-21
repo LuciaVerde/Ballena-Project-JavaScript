@@ -76,10 +76,7 @@ nav .numerito {
   color: black;
 }
 
-footer {
-  font-family: "Poppins", sans-serif;
-}
-footer h5 {
+footer h4 {
   font-size: 0.9rem;
   font-weight: 600;
 }
@@ -150,6 +147,10 @@ footer p {
 .productos .contenedorProductos .producto .fa-heart {
   font-size: 1.4rem;
   color: white;
+}
+
+.tituloPrincipalCarrito {
+  font-size: 3rem;
 }
 
 .contenedorCarrito {

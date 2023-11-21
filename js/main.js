@@ -113,7 +113,7 @@ function agregarAlCarrito(e) {
             window.location.href = this.destination; // Redirige al hacer clic en el toast
         }
     }).showToast();
-    
+
     const idBoton = e.currentTarget.id;
     const productoAgregado = productos.find(producto => producto.id === idBoton);
 
