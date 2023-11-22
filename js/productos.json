@@ -124,7 +124,7 @@
         "id": "mesa-03",
         "titulo": "Guenoa",
         "imagen": "./images/mesas-3.jpg",
-        "descripcion": "Mesa ratona circular hecha en madera de pino tratado de 60 cm de alto",
+        "descripcion": "Mesa ratona circular hecha en madera de pino tratado",
         "categoria": {
             "nombre": "Mesas",
             "id": "mesas"

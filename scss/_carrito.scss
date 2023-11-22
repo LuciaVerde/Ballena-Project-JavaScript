@@ -1,18 +1,15 @@
-.tituloPrincipalCarrito{
+.tituloPrincipalCarrito {
     @include titulo-principal;
 }
 
 .contenedorCarrito {
-    width: 50rem;
+
 
     .carritoVacio {
         color: $color-black;
     }
 
     .carritoProductos {
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
 
         .carritoProducto {
             display: flex;
@@ -25,14 +22,27 @@
             margin-bottom: 2rem;
             padding: 1rem;
 
+            @media (max-width: 576px) {
+                display: flex;
+                justify-content: space-between;
+            }
+
             .carritoProductoImagen {
-                width: 6rem;
+                max-width: 6rem;
                 border-radius: 0.3rem;
+
+                @media (max-width: 576px) {
+                    max-width: 4rem;
+                }
             }
 
             p {
                 font-size: 1.3rem;
                 margin-bottom: 0;
+
+                @media (max-width: 576px) {
+                    font-size: 1rem;
+                }
             }
 
 
@@ -43,7 +53,7 @@
                 .botonesCantidad {
                     @include flex-center-center;
                     flex-direction: row;
-                    
+
 
                     .botonRestar,
                     .botonSumar {
@@ -53,6 +63,13 @@
                         border-radius: 0.3rem;
                         height: 1.5rem;
                         width: 1.5rem;
+                        display: flex;
+                        align-items: center;
+
+                        @media (max-width: 576px) {
+                            height: 1.2rem;
+                            width: 1.2rem;
+                        }
                     }
                 }
             }
@@ -71,6 +88,11 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
+        font-size: 0.9rem;
+
+        @media (max-width: 576px) {
+            font-size: 0.74rem;
+        }
 
         .botonVaciarCarrito {
             border: none;
@@ -78,7 +100,6 @@
             background-color: $color-black;
             color: $color-white;
             padding: 0.60rem 1rem;
-            font-size: 0.9rem;
             font-weight: 600;
         }
 
@@ -89,7 +110,6 @@
             background-color: rgb(248, 248, 248);
             color: $color-black;
             padding: 0.60rem 1rem;
-            font-size: 0.9rem;
             font-weight: 600;
         }
 
@@ -100,7 +120,6 @@
             background-color: $color-black;
             color: $color-white;
             padding: 0.60rem 1rem;
-            font-size: 0.9rem;
             font-weight: 600;
         }
     }

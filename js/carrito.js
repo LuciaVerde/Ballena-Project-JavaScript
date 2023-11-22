@@ -45,10 +45,7 @@ function cargarProductosCarrito() {
                         <button class="botonSumar"> + </button>
                     </div> 
                 </div>
-                <div class="carritoProductoPrecio">
-                    <small>Precio</small>
-                    <p>$${producto.precio}</p>
-                </div>
+
                 <div class="carritoProductoSubtotal">
                     <small>Subtotal</small>
                     <p>$${producto.precio * producto.cantidad}</p>
