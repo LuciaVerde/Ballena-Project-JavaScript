@@ -1,15 +1,23 @@
 @mixin flex-center-center {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
 @mixin margen-seccion{
   margin-top: $spacing-md;
 }
 
+@mixin margen-seccion-movile{
+  margin-top: $spacing-sm;
+}
+
 @mixin titulo-principal{
   font-size: $font-size-lg;
 }
+
+
+  
+
 
 

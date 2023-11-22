@@ -1,6 +1,10 @@
 .productos {
   @include margen-seccion;
 
+  @media (max-width: 576px) {
+    @include margen-seccion-movile;
+  }
+
   .tituloPrincipal {
     @include titulo-principal;
   }
@@ -43,6 +47,10 @@
       max-width: 25rem;
       background-color: $color-black;
       margin: 1rem;
+
+      @media (max-width: 767px) {
+        width: 23rem;
+      }
 
       .productoImagen {
         margin-bottom: 1rem;

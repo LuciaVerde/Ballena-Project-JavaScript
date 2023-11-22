@@ -1,6 +1,10 @@
 .nosotros {
     @include margen-seccion;
 
+    @media (max-width: 992px) {
+        @include margen-seccion-movile;
+    }
+
     .tituloPrincipal {
         @include titulo-principal;
     }
@@ -15,17 +19,18 @@
         font-style: italic;
         font-size:$font-size-xs;
     }
-
+.parrafos{
+    margin-bottom: $spacing-sm;
+    
     p {
         font-family: 'Poppins', sans-serif;
         font-size: 1.2rem;
 
-        @media (max-width:992px) {
-            font-size: 1rem;
-        }
-
-        @media (max-width:767px) {
+        @media (max-width:975px) {
             text-align: center;
+            font-size: $font-size-xs;
         }
     }
+}
+   
 }

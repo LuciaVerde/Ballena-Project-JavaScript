@@ -91,6 +91,11 @@ footer p {
 .productos {
   margin-top: 5rem;
 }
+@media (max-width: 576px) {
+  .productos {
+    margin-top: 2rem;
+  }
+}
 .productos .tituloPrincipal {
   font-size: 3rem;
 }
@@ -123,6 +128,11 @@ footer p {
   max-width: 25rem;
   background-color: black;
   margin: 1rem;
+}
+@media (max-width: 767px) {
+  .productos .contenedorProductos .producto {
+    width: 23rem;
+  }
 }
 .productos .contenedorProductos .producto .productoImagen {
   margin-bottom: 1rem;
@@ -268,6 +278,11 @@ footer p {
 .nosotros {
   margin-top: 5rem;
 }
+@media (max-width: 992px) {
+  .nosotros {
+    margin-top: 2rem;
+  }
+}
 .nosotros .tituloPrincipal {
   font-size: 3rem;
 }
@@ -280,23 +295,27 @@ footer p {
   font-style: italic;
   font-size: 1rem;
 }
-.nosotros p {
+.nosotros .parrafos {
+  margin-bottom: 2rem;
+}
+.nosotros .parrafos p {
   font-family: "Poppins", sans-serif;
   font-size: 1.2rem;
 }
-@media (max-width: 992px) {
-  .nosotros p {
-    font-size: 1rem;
-  }
-}
-@media (max-width: 767px) {
-  .nosotros p {
+@media (max-width: 975px) {
+  .nosotros .parrafos p {
     text-align: center;
+    font-size: 1rem;
   }
 }
 
 .contacto {
   margin-top: 5rem;
+}
+@media (max-width: 992px) {
+  .contacto {
+    margin-top: 2rem;
+  }
 }
 .contacto .imgContainer img {
   max-height: 40rem;
@@ -305,9 +324,14 @@ footer p {
 .contacto h2 {
   font-size: 2rem;
 }
-.contacto .botonContacto {
+.contacto form .botonContacto {
   padding-left: 5rem;
   padding-right: 5rem;
+}
+@media (max-width: 992px) {
+  .contacto form {
+    margin-top: 2rem;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

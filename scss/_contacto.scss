@@ -1,6 +1,10 @@
 .contacto {
     @include margen-seccion;
 
+    @media (max-width: 992px) {
+        @include margen-seccion-movile;
+    }
+
     .imgContainer {
         img {
             max-height: 40rem;
@@ -12,8 +16,16 @@
         font-size: $font-size-md;
     }
 
-    .botonContacto {
-        padding-left: 5rem;
-        padding-right: 5rem;
+    form{
+        .botonContacto {
+            padding-left: 5rem;
+            padding-right: 5rem;
+        }
+
+        @media (max-width: 992px) {
+            @include margen-seccion-movile;
+        }
     }
+
+   
 }
