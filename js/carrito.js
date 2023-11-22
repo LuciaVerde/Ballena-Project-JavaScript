@@ -1,6 +1,8 @@
+//obtener productos del carrito desde el almacenamiento local
 let productosEnElCarrito = localStorage.getItem("productos-en-carrito");
 productosEnElCarrito = JSON.parse(productosEnElCarrito);
 
+//elementos del DOM
 const contenedorCarritoVacio = document.getElementById("carritoVacio");
 const contenedorCarritoProductos = document.getElementById("carritoProductos");
 const contenedorCarritoAcciones = document.getElementById("carritoAcciones");
@@ -10,19 +12,23 @@ const botonVaciar = document.getElementById("botonVaciarCarrito");
 const contenedorTotal = document.getElementById("total");
 const botonComprar = document.getElementById("botonComprarCarrito");
 
-//funcion para cargar productos 
+//funcion para cargar productos en el carrito 
 function cargarProductosCarrito() {
-
+    //verificar si hay productos en el carrito
     if (productosEnElCarrito && productosEnElCarrito.length > 0) {
 
+        // Mostrar elementos del carrito si hay productos
         contenedorCarritoVacio.classList.add("disabled");
         contenedorCarritoProductos.classList.remove("disabled");
         contenedorCarritoAcciones.classList.remove("disabled");
         contenedorCarritoComprado.classList.add("disabled");
-
+        
+        //limpiar la sección de productos del carrito
         contenedorCarritoProductos.innerHTML = "";
 
+        // Iterar sobre los productos en el carrito para mostrarlos en la interfaz
         productosEnElCarrito.forEach(producto => {
+            //crear elementos HTML para cada producto en el carrito
             const div = document.createElement("div");
             div.classList.add("carritoProducto");
             div.innerHTML = `
@@ -138,7 +144,7 @@ function actualizarTotal() {
     `;
 }
 
-//lo que sucede al presionar el boton vaciar carrito
+// acción al hacer click en el botón "Vaciar carrito": muestra un mensaje de confirmación para vaciar el carrito, elimina todos los productos, actualiza la vista del carrito y muestra un mensaje de éxito tras vaciarlo
 botonVaciar.addEventListener("click", vaciarCarrito);
 function vaciarCarrito() {
     Swal.fire({
@@ -164,7 +170,7 @@ function vaciarCarrito() {
 }
 
 
-//lo que sucede al presionar el boton comprar ahora
+// acción al hacer click en el botón "Comprar ahora": confirma la compra, vacía el carrito,actualiza la visualización, y muestra un mensaje de éxito
 botonComprar.addEventListener("click", comprarCarrito);
 function comprarCarrito() {
     Swal.fire({

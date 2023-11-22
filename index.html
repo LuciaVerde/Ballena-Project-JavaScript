@@ -32,7 +32,7 @@
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
                     aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
+                    <span class="navbar-toggler-icon" ></span>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
@@ -97,7 +97,7 @@
         <!--sección nosotros-->
 
         <section class="container mx-auto row nosotros" id="nosotros">
-            <h2 class="tituloPrincipal pb-5 text-center">Nosotros</h2>
+            <h2 class="tituloPrincipal mb-5 text-center">Nosotros</h2>
             <div class="col-lg-6 col-md-12 d-flex flex-column justify-content-center">
                 <p>Nuestra trayectoria desde 1985 ha sido guiada por el firme propósito de tejer lazos más allá de la
                     mera producción de muebles. Cada mesa, silla o cama que sale de nuestro taller es el resultado de un
@@ -114,21 +114,21 @@
             </div>
 
             <figure class="col-lg-6 col-md-12 nosotrosImgContainer d-flex flex-column text-center align-items-center">
-                <img src="images/nosotros1.jpg" alt="Descripción de la imagen">
+                <img class="img-fluid" src="images/nosotros1.jpg" alt="Descripción de la imagen">
                 <figcaption class=" text-center pt-4">Alejandro Verde, fundador de Ballena</figcaption>
             </figure>
         </section>
 
         <!-- sección contacto -->
 
-        <section class="row container mx-auto contacto" id="contacto">
+        <section class="row container mx-auto contacto d-flex align-items-center" id="contacto">
             <div class="col-lg-6 col-sm-12 imgContainer mx-auto text-center">
                 <img class="img-fluid" src="./images/contactocortado.jpg"
                     alt="Imagen de un sillon de exterior con almohadones">
             </div>
-            <form class="col-lg-6 col-sm-12 mx-auto my-5 d-flex flex-column">
-                <h2 class="text-center pb-5">¿Tienes alguna idea en mente? ¡Escríbenos!</h2>
-                <div class="d-flex flex-column align-items-center">
+            <form class="col-lg-6 col-sm-12 mx-auto d-flex flex-column">
+                <h2 class="text-center">¿Tienes alguna idea en mente? ¡Escríbenos!</h2>
+                <div class="d-flex flex-column justify-content-center align-items-center">
                     <div class="mb-3 col-8">
                         <label for="nombreInput" class="form-label">Nombre</label>
                         <input type="text" class="form-control" id="nombreInput" placeholder="Juan Martinez">
@@ -197,7 +197,6 @@
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
     <!--js-->
     <script src="js/main.js"></script>
-    <script src="js/carrito.js"></script>
 </body>
 
 </html>

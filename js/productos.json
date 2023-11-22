@@ -3,7 +3,7 @@
         "id": "silla-01",
         "titulo": "Kafil",
         "imagen": "./images/silla-1.jpg",
-        "descripcion": "Silla hecha en madera de roble con tapizado en tela gris.",
+        "descripcion": "Silla hecha en madera de roble con tapizado en tela gris",
         "categoria": {
             "nombre": "Sillas",
             "id": "sillas"
@@ -25,7 +25,7 @@
         "id": "silla-03",
         "titulo": "Porto",
         "imagen": "./images/silla-3.jpg",
-        "descripcion": "Silla de comedor hecha en madera de roble con almohadón con cierre.",
+        "descripcion": "Silla de comedor hecha en madera de roble con almohadón con cierre",
         "categoria": {
             "nombre": "Sillas",
             "id": "sillas"
@@ -36,7 +36,7 @@
         "id": "decoracion-01",
         "titulo": "Almohadón",
         "imagen": "./images/decoracion-1.jpg",
-        "descripcion": "Almohadon cuadrado con cierre blanco y negro de 40 centimetros.",
+        "descripcion": "Almohadon cuadrado con cierre blanco y negro de 40 centimetros",
         "categoria": {
             "nombre": "Decoración",
             "id": "decoracion"
@@ -47,7 +47,7 @@
         "id": "decoracion-02",
         "titulo": "Pantalla",
         "imagen": "./images/decoracion-2.jpg",
-        "descripcion": "Pantalla tejida de 1 metro de largo con conexón. (No incluye lámpara).",
+        "descripcion": "Pantalla tejida de 1 metro de largo con conexón. (No incluye lámpara)",
         "categoria": {
             "nombre": "Decoración",
             "id": "decoracion"
@@ -58,7 +58,7 @@
         "id": "decoracion-03",
         "titulo": "Posa platos",
         "imagen": "./images/decoracion-3.jpg",
-        "descripcion": "Posa platos de ratán tejido de 20 centímetros de diámetro.",
+        "descripcion": "Posa platos de ratán tejido de 20 centímetros de diámetro",
         "categoria": {
             "nombre": "Decoración",
             "id": "decoracion"
@@ -69,7 +69,7 @@
         "id": "estanteria-01",
         "titulo": "Madrid",
         "imagen": "./images/estanterías-1.jpg",
-        "descripcion": "Estantería hecha en madera de pino tratado de 2 metros de alto.",
+        "descripcion": "Estantería hecha en madera de pino tratado de 2 metros de alto",
         "categoria": {
             "nombre": "Estanterías",
             "id": "estanterias"
@@ -80,7 +80,7 @@
         "id": "estanteria-02",
         "titulo": "Hamburgo",
         "imagen": "./images/estanterías-2.jpg",
-        "descripcion": "Estantería hecha en madera de pino tratado de 1,50 metros de alto.",
+        "descripcion": "Estantería hecha en madera de pino tratado de 1,50 metros de alto",
         "categoria": {
             "nombre": "Estanterías",
             "id": "estanterias"
@@ -91,7 +91,7 @@
         "id": "estanteria-03",
         "titulo": "Berlín",
         "imagen": "./images/estanterías-3.jpg",
-        "descripcion": "Cómoda hecha en madera de roble de 1,80 metros de largo.",
+        "descripcion": "Cómoda hecha en madera de roble de 1,80 metros de largo",
         "categoria": {
             "nombre": "Estanterías",
             "id": "estanterias"
@@ -102,7 +102,7 @@
         "id": "mesa-01",
         "titulo": "Tranqueras",
         "imagen": "./images/mesas-1.jpg",
-        "descripcion": "Mesa hecha en madera de lapacho de 2 metros de largo.",
+        "descripcion": "Mesa hecha en madera de lapacho de 2 metros de largo",
         "categoria": {
             "nombre": "Mesas",
             "id": "mesas"
@@ -113,7 +113,7 @@
         "id": "mesa-02",
         "titulo": "Iporá",
         "imagen": "./images/mesas-2.jpg",
-        "descripcion": "Mesa hecha en madera de pino tratado de 3 metros de largo.",
+        "descripcion": "Mesa hecha en madera de pino tratado de 3 metros de largo",
         "categoria": {
             "nombre": "Mesas",
             "id": "mesas"
@@ -124,7 +124,7 @@
         "id": "mesa-03",
         "titulo": "Guenoa",
         "imagen": "./images/mesas-3.jpg",
-        "descripcion": "Mesa ratona circular hecha en madera de pino tratado de 60 cm de alto.",
+        "descripcion": "Mesa ratona circular hecha en madera de pino tratado de 60 cm de alto",
         "categoria": {
             "nombre": "Mesas",
             "id": "mesas"
@@ -135,7 +135,7 @@
         "id": "tumbona-01",
         "titulo": "Guaviyú",
         "imagen": "./images/tumbona-1.webp",
-        "descripcion": "Tumbona hecha en madera de pino tratado con rueditas.",
+        "descripcion": "Tumbona hecha en madera de pino tratado con rueditas",
         "categoria": {
             "nombre": "Tumbonas",
             "id": "tumbonas"
@@ -146,7 +146,7 @@
         "id": "tumbona-02",
         "titulo": "Guichón",
         "imagen": "./images/tumbona-2.webp",
-        "descripcion": "Tumbona hecha en madera de lapacho con rueditas.",
+        "descripcion": "Tumbona hecha en madera de lapacho con rueditas",
         "categoria": {
             "nombre": "Tumbonas",
             "id": "tumbonas"
@@ -157,7 +157,7 @@
         "id": "tumbona-03",
         "titulo": "San Nicanor",
         "imagen": "./images/tumbona-3.jpg",
-        "descripcion": "Tumbona hecha en madera de pino tratado con rueditas.",
+        "descripcion": "Tumbona hecha en madera de pino tratado con rueditas",
         "categoria": {
             "nombre": "Tumbonas",
             "id": "tumbonas"
@@ -168,7 +168,7 @@
         "id": "sillon-01",
         "titulo": "Concordia",
         "imagen": "./images/sillones-1.jpg",
-        "descripcion": "Sillón de tres cuerpos hecho en madera de pino tratado.",
+        "descripcion": "Sillón de tres cuerpos hecho en madera de pino tratado",
         "categoria": {
             "nombre": "Sillones",
             "id": "sillones"
@@ -179,7 +179,7 @@
         "id": "sillon-02",
         "titulo": "Carmelo",
         "imagen": "./images/sillones-2.jpg",
-        "descripcion": "Sillón de cinco cuerpos hecho en madera de lapacho.",
+        "descripcion": "Sillón de cinco cuerpos hecho en madera de lapacho",
         "categoria": {
             "nombre": "Sillones",
             "id": "sillones"
@@ -190,7 +190,7 @@
         "id": "sillon-03",
         "titulo": "Gervasoni",
         "imagen": "./images/sillones-3.jpg",
-        "descripcion": "Sillón de exterior de un cuerpo hecho en madera de lapacho.",
+        "descripcion": "Sillón de exterior de un cuerpo hecho en madera de lapacho",
         "categoria": {
             "nombre": "Sillones",
             "id": "sillones"

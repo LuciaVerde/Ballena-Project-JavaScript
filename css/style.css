@@ -6,6 +6,9 @@
 nav {
   background-color: black;
 }
+nav .navbar-toggler-icon {
+  filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(15deg) brightness(1000%);
+}
 nav .logo {
   width: 8rem;
 }
@@ -128,7 +131,7 @@ footer p {
 .productos .contenedorProductos .producto .productoTitulo,
 .productos .contenedorProductos .producto .productoPrecio {
   font-weight: 600;
-  font-size: 1rem;
+  font-size: 1.2rem;
   color: white;
 }
 .productos .contenedorProductos .producto .productoDescripcion {
@@ -143,10 +146,6 @@ footer p {
   padding: 0.6rem 1rem;
   font-size: 0.9rem;
   font-weight: 600;
-}
-.productos .contenedorProductos .producto .fa-heart {
-  font-size: 1.4rem;
-  color: white;
 }
 
 .tituloPrincipalCarrito {
@@ -254,16 +253,12 @@ footer p {
 }
 .nosotros img {
   max-height: 40rem;
-  max-width: 40rem;
   border-radius: 0.5rem;
 }
 .nosotros figcaption {
   font-weight: 600;
   font-style: italic;
-}
-.nosotros .nosotrosTitulo {
-  font-size: 2.2rem;
-  font-weight: 600;
+  font-size: 1rem;
 }
 .nosotros p {
   font-family: "Poppins", sans-serif;
@@ -287,7 +282,7 @@ footer p {
   max-height: 40rem;
   border-radius: 0.5rem;
 }
-.contacto h1 {
+.contacto h2 {
   font-size: 2rem;
 }
 .contacto .botonContacto {

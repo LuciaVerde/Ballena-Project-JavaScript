@@ -7,18 +7,13 @@
 
     img {
         max-height: 40rem;
-        max-width: 40rem;
         border-radius: 0.5rem;
     }
 
     figcaption {
         font-weight: 600;
         font-style: italic;
-    }
-
-    .nosotrosTitulo {
-        font-size: 2.2rem;
-        font-weight: 600;
+        font-size:$font-size-xs;
     }
 
     p {

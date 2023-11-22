@@ -1,5 +1,7 @@
+//array que almacenará los productos obtenidos del archivo JSON
 let productos = [];
 
+//obtención de datos desde el archivo JSON y carga inicial de productos
 fetch("./js/productos.json")
     .then(response => response.json())
     .then(data => {
@@ -7,13 +9,14 @@ fetch("./js/productos.json")
         cargarProductos(productos);
     })
 
+//elementos del DOM
 const contenedorProductos = document.getElementById("contenedorProductos");
 const botonesCategorias = document.querySelectorAll(".botonCategoria");
 const tituloCategoria = document.getElementById("tituloCategoria");
 let botonesAgregar = document.querySelectorAll(".botonAgregar");
 const numerito = document.getElementById("numerito");
 
-//funcion para cargar los productos 
+//funcion para cargar los productos a la interfaz
 function cargarProductos(productosElegidos) {
 
     contenedorProductos.innerHTML = "";
@@ -45,19 +48,20 @@ function cargarProductos(productosElegidos) {
 
 cargarProductos(productos);
 
-//botones categorias
+// Event listeners para los botones de categorías
 botonesCategorias.forEach(boton => {
     boton.addEventListener("click", (e) => {
-
+    //remover la clase "active" de todos los botones de categoría para desactivar la selección anterior y luego agregar dicha clse al botón que fue elegido
         botonesCategorias.forEach(boton => boton.classList.remove("active"));
         e.currentTarget.classList.add("active");
-
+        //si el boton no es el de "todos" busca el primer producto cque pertenezca a  la categoria seleccionada y cambia el subtitulo    
         if (e.currentTarget.id != "todos") {
             const productoCategoria = productos.find(producto => producto.categoria.id === e.currentTarget.id);
             tituloCategoria.innerText = productoCategoria.categoria.nombre;
-
+            //filtro de la lista de productos para mostrar solo los productos de la categoría seleccionada
             const productosBoton = productos.filter(producto => producto.categoria.id === e.currentTarget.id);
             cargarProductos(productosBoton);
+            //si el boton clickeado es el de "todos" se actualiza el subtitulo
         } else {
             tituloCategoria.innerText = "Todos los productos";
             cargarProductos(productos);
@@ -97,8 +101,8 @@ function agregarAlCarrito(e) {
             y: 80
         },
         duration: 3000,
-        destination: "carrito.html", // Página a la que quieres redirigir
-        newWindow: false, // Abre la página en la misma ventana
+        destination: "carrito.html",
+        newWindow: false, 
         close: true,
         gravity: "top",
         position: "right",
@@ -108,19 +112,22 @@ function agregarAlCarrito(e) {
             color: "white",
         },
         onClick: function () {
-            window.location.href = this.destination; // Redirige al hacer clic en el toast
+            window.location.href = this.destination; 
         }
     }).showToast();
 
+    //obtiene el ID del botón que se eligió
     const idBoton = e.currentTarget.id;
+    //busca el producto con ese ID en la lista de productos
     const productoAgregado = productos.find(producto => producto.id === idBoton);
-
+    //Chequea si el producto ya está en el carrito
     const index = productosEnCarrito.findIndex(producto => producto.id === idBoton);
-
+    // verifica si el producto ya está en el carrito y actualiza su cantidad, o lo añade al carrito
     if (productosEnCarrito.some(producto => producto.id === idBoton)) {
         const index = productosEnCarrito.findIndex(producto => producto.id === idBoton);
         productosEnCarrito[index].cantidad++;
     } else {
+        //si el producto no esta en el carrito lo agrega con una cantidad inicial de 1
         productoAgregado.cantidad = 1;
         productosEnCarrito.push(productoAgregado);
     }

@@ -1,12 +1,18 @@
 nav {
   background-color: $color-black;
 
+  .navbar-toggler-icon {
+    filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(15deg) brightness(1000%);
+  }
+
+
   .logo {
     width: 8rem;
   }
 
   .nav-link {
     color: $color-white;
+
     &:hover {
       color: $color-white;
       font-weight: 600;

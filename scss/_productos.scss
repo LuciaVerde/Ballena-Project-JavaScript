@@ -13,7 +13,7 @@
       background-color: transparent;
       border: none;
       color: rgb(72, 71, 71);
-      font-size: 1.2rem;
+      font-size: $font-size-sm;
       transition: color 0.3s ease;
       margin: 0.5rem;
 
@@ -31,7 +31,7 @@
   }
 
   .tituloCategoria {
-    font-size: 2rem;
+    font-size: $font-size-md;
   }
 
   .contenedorProductos {
@@ -52,13 +52,13 @@
       .productoTitulo,
       .productoPrecio {
         font-weight: 600;
-        font-size: 1rem;
+        font-size: $font-size-sm;
         color: $color-white;
       }
 
       .productoDescripcion {
         color: $color-white;
-        font-size: 0.9rem;
+        font-size: 0.90rem;
       }
 
       .botonAgregar {
@@ -67,14 +67,10 @@
         background-color: $color-white;
         color: $color-black;
         padding: 0.60rem 1rem;
-        font-size: 0.9rem;
+        font-size: 0.90rem;
         font-weight: 600;
       }
 
-      .fa-heart {
-        font-size: 1.4rem;
-        color: $color-white;
-      }
     }
   }
 
