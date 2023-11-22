@@ -33,10 +33,8 @@ function cargarProductos(productosElegidos) {
                 <p class="productoDescripcion col-md-9"> ${producto.descripcion}</p>
             </div>
             </div>
-            <div class="d-flex justify-content-between px-3">
-                <button class="botonAgregar" id="${producto.id}">Agregar</button>
-                <i class="fa-regular fa-heart d-flex align-items-center"></i>
-            </div>
+            <button class="botonAgregar mx-3" id="${producto.id}">Agregar</button>
+            
         `;
 
         contenedorProductos.append(div);
