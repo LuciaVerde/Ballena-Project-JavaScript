@@ -42,7 +42,7 @@ git clone https://github.com/LuciaVerde/Ballena-Project-JavaScript.git
 
 Developer: Lucía Verde
 
-Course: Web Development - Coderhouse
+Course: JavaScript - Coderhouse
 
 ## Contact
 
