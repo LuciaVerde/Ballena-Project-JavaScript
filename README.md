@@ -8,7 +8,7 @@ The aim of this project is to create a furniture store website where users can b
 
 ## Description
 
-Dalva Skin is a website designed for a furniture store. The user can see all the products in the store, filter them by category and add them to the shopping cart where the quantities can be modified. Here the user can also empty the cart or place the order.
+Ballena is a website designed for a furniture store. The user can see all the products in the store, filter them by category and add them to the shopping cart where the quantities can be modified. Here the user can also empty the cart or place the order.
 
 ## Technologies Used
 
